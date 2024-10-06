@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .dark-mode {
+            background-color: rgb(10, 13, 28);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <div class="container border p-2 justify-content-center ">
+            <button id="darkModeToggle" class="btn btn-primary btn-sm m-3">Dark Mode</button>
+            <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+                <div class="d-flex align-items-center">
+                    <img src="IUlogo.jpg" alt="logo" width="100">
+                    <h3 class="m-3">Le Ngoc Quy</h3>
+                </div>
+                
+                <div class="justify-content-between ">
+                    <a href="#">Home</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Articles</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class=" d-flex flex-column justify-content-between align-items-center">
+                <h1>Frontend  Developer</h1>
+                <p><small>html only with proper layout, nostyling</small></p>
+            </div>
+        </div>
+    </header>
+    <main class="container border">
+        <div class="d-flex flex-column flex-md-row">
+            <div class="border-right p-2">
+                <h2>Projects</h2>
+                <div>HTML Only Portfolio</div> <hr>
+                <div>Calculator</div> <hr>
+                <div>Quiz App</div> <hr>
+                <div>Countdown Timer</div> <hr>
+                <div>Product Upcoming Page</div>
+            </div>
+            <div class="border-right p-2">
+                <h2>Work Experience</h2>
+                <div class="job">
+                    <h3>roadmap.sh</h3>
+                    <p>Solved all the frontend projects</p>
+                    <a href="#">Visit my Profile</a>
+                </div>
+                <hr>
+                <div class="job">
+                    <h3>OpenSource Work</h3>
+                    <p>Contributed to 50 open source projects. Made my own projects with 200 GitHub Stars.</p>
+                    <a href="https://github.com/Lelequyngocquy">Visit my GitHub Profile</a>
+                </div>
+            </div>
+            <div class="p-2 ">
+                <h2>Education</h2>
+                <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                <h3>Courses I took:</h3>
+                <ul>
+                    <li>Object Oriented Programming</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Web Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Human Computer Interaction</li>
+                    <li>Computer Graphics</li>
+                    <li>Database Management Systems</li>
+                    <li>Distributed Database Systems</li>
+                    <li>Discrete Mathematics</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container border">
+
+            <h2 class="mx-3">Reviews from my Teachers</h2>
+            
+            <div class="d-flex justify-content-around flex-column flex-md-row">
+                <div class="border m-2 p-2">
+                    <p>Quy was a brilliant student; always stood out with his assignments.</p>
+                    <p><small>Quy</small></p>
+                    <p><small>Assistant Professor</small></p>
+                </div>
+                <div  class="border m-2 p-2">
+                    <p>Quy was a brilliant student; always stood out with his assignments.</p>
+                    <p><small>Quy</small></p>
+                    <p><small>Assistant Professor</small></p>
+                </div>
+                <div class="border m-2 p-2">
+                    <p>Quy was a brilliant student; always stood out with his assignments.</p>
+                    <p><small>Quy</small></p>
+                    <p><small>Assistant Professor</small></p>
+                </div>
+            
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="copyright ">&copy; Ngoc Quy. All rights reserved 2025.</p>
+            </div>
+            
+        </div>
+    
+    </footer>
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
